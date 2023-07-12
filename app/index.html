@@ -1,51 +1,67 @@
-<!--#set var="title" value="ДробСервис" -->
-<!--#include virtual="/parts/header.html" -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Дробсервис</title>
+	<meta name="description" content="">
 
-	<section class="banner">
-		<h2 class="banner__title">
+	<meta name="viewport" content="width=device-width">
 
-		</h2>
-	</section>
+	<link rel="icon" href="images/favicon.png">
+	
+	<link rel="stylesheet" href="css/app.min.css">
 
-	<section class="advantages">
-		<ul class="advantages-list">
-			<li class="advantages-list__item"></li>
-			<li class="advantages-list__item"></li>
-			<li class="advantages-list__item"></li>
-		</ul>
-	</section>
+	<style>
+        ul {
+            margin: 0 auto;
+            padding: 0px;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 60px;
+			position: relative;
+			z-index: 10;
+        }
 
-	<section class="catalog-list">
-		<img class="catalog-list-bg" alt="" />
-		<div class="container">
-			<div class="catalog-list-item">
-				<a href="" class="catalog-list-item__link"></a>
-				<div class="catalog-list-item-picture">
-					<img src="" alt="" class="catalog-list-item-picture__img">
-				</div>
-				<h3 class="catalog-list-item__title"></h3>
-				<div class="catalog-list-item__more">Подробнее</div>
-			</div>
-		</div>
-	</section>
+        ul a {
+            color: #212326 !important
+        }
 
-	<section class="about-video">
-		<div class="container">
-			<!-- youtube -->
-		</div>
-	</section>
+        ul li {
+            margin-bottom: 25px;
+        }
 
-	<section class="news">
-		<img class="news-bg" alt="" />
-		<div class="news-list">
-			<div class="news-list-item">
-				<h3 class="news-list-item__titile"></h3>
-				<p class="news-list-item__date"></p>
-				<p class="news-list-item__text"></p>
-				<a href="" class="news-list-item__link"></a>
-			</div>
-		</div>
-		<a href="" class="news-more__link">Больше новостей</a>
-	</section>
+		.logo {
+			width: 136px;
+			height: 52px;
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			position: relative;
+			z-index: 10;
+			margin-top: 60px;
+			background-image: url("data:image/svg+xml,%3Csvg width='136' height='52' viewBox='0 0 136 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.33152 34.2918L52.0985 1.43945L46.3285 19.5016L73.0507 1.43945L57.1294 51.1067H43.7368L50.044 32.1233L22.5885 50.7676L28.8602 31.1258L0 50.9927L5.33152 34.2918Z' fill='%23572B0B'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M64.5898 51.1104L75.9905 15.3368L96.6523 1.3299L84.44 39.1449H106.085L118.286 0.650391H135.246L122.993 39.0302H130.097L126.23 51.1104H64.5898Z' fill='%23572B0B'/%3E%3C/svg%3E%0A") no-repeat;
+			background-position: center center;
+			background-size: contain;
+		}
 
-<!--#include virtual="/parts/footer.html" -->
+		body {
+			background: #f9d72c;
+		}
+    </style>
+</head>
+
+<body>
+
+	<div class="logo">
+		<img src="images/dist/logo.png" alt="Дробсервис">
+	</div>
+
+
+	<ul>
+		<li>
+			<a href="main.html">Главная</a>
+		</li>
+	</ul>
+
+</body>
+</html>
