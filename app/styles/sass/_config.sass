@@ -1,10 +1,9 @@
 // USER VARIABLES SECTION
 
-$accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
 $textcolor: #333 // Text Color
 $lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
+$userfont: pdfdin, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -27,19 +26,17 @@ $gutter: $grid-gutter-width
 		font-weight: $fweight
 		src: url($furl) format('woff2')
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('pdfdin', normal, 300, '../fonts/PFDin/PF Din Text Comp Pro.woff2')
+@include font('circle', bold, 600, '../fonts/Circle/Circle.woff2')
+@include font('circleEB', bold, 600, '../fonts/Circle/CircleExtraBold.woff2')
 
 // GENERAL CSS SETTINGS
 
 ::placeholder
 	color: #666
 
-::selection
-	background-color: $accent
-	color: #fff
+// ::selection
+// 	color: #fff
 
 input, textarea
 	outline: none
