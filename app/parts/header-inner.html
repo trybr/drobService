@@ -11,7 +11,13 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f6d718">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#f6d718">
 
 	<link rel="stylesheet" href="css/app.min.css">
 
@@ -22,43 +28,76 @@
 	<header class="header">
 		<div class="container">
 			<div class="header-top-panel">
-				<a href="" class="header__logo"></a>
+				<a href="/" class="header__logo"></a>
 				<nav class="header-navigation">
 					<ul class="header-navigation-menu">
 						<li class="header-navigation-menu__item active">
+							<div class="header-navigation-menu__hover"></div>
 							<a href="" class="header-navigation-menu__link">О компании</a>
 						</li>
 						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
 							<a href="" class="header-navigation-menu__link">Каталог</a>
 						</li>
 						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
 							<a href="" class="header-navigation-menu__link">Новости</a>
 						</li>
 						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
 							<a href="" class="header-navigation-menu__link">Спецпредложения</a>
 						</li>
 						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
 							<a href="" class="header-navigation-menu__link">Доставка</a>
 						</li>
 						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
 							<a href="" class="header-navigation-menu__link">Галерея</a>
 						</li>
 						<li class="header-navigation-menu__item">
+							<div class="header-navigation-menu__hover"></div>
 							<a href="" class="header-navigation-menu__link">Контакты</a>
 						</li>
 					</ul>
 					<div class="header-navigation-right-block">
-						<a href="tel:" class="header-navigation__phone"></a>
+						<div class="header-navigation-phone">
+							<a href="tel:+73512402060" class="header-navigation__phone">
+								+7 (351) 240-20-60
+							</a>
+						</div>
 						<div class="header-navigation-search"></div>
 					</div>
 				</nav>
 			</div>
 		</div>
 
+		<section class="header-banner">
+			<img src="images/src/news-bg.jpg" alt="" class="header-banner__image">
+			<div class="container">
+				<div class="header-banner-title">
+					<h1 class="header-banner__title">
+						О компании
+					</h1>
+				</div>
+			</div>
+		</section>
+
 		<nav class="breadcrumb-navigation">
-			<ol class="breadcrumb">
-			  <li class="breadcrumb-item active" aria-current="page">Home</li>
-			  <li class="breadcrumb-item" aria-current="page">Каталог</li>
-			</ol>
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active" aria-current="page">
+						<a href="#" class="breadcrumb-item__link">
+							Главная
+						</a>
+					</li>
+					<li class="breadcrumb-item separator" aria-current="page">/</li>
+					<li class="breadcrumb-item" aria-current="page">
+						<a href="#" class="breadcrumb-item__link">
+							<!--#echo var="title" -->
+						</a>
+					</li>
+				</ol>
+			</div>
 		</nav>
 	</header>
