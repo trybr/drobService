@@ -1,15 +1,5 @@
 .footer
     position: relative
-    &::before
-        content: ''
-        background: url('../images/dist/footer-bg.png') no-repeat center center
-        background-size: contain
-        width: 1310px
-        height: 312px
-        display: block
-        position: absolute
-        bottom: 0px
-        left: 0px
     .footer__logo
         width: 295px
         height: 160px
@@ -28,6 +18,17 @@
         flex-direction: row
         justify-content: flex-start
         padding-bottom: 20px
+        position: relative
+        &::before
+            content: ''
+            background: url('../images/dist/footer-bg.png') no-repeat center center
+            background-size: contain
+            width: 1310px
+            height: 312px
+            display: block
+            position: absolute
+            bottom: 0px
+            left: -65px
         .footer-block
             text-align: left
             padding: 0px 20px
